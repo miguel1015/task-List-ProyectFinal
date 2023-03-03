@@ -1,0 +1,905 @@
+.cursor{
+  height: 0px;
+}
+
+
+
+.containerlogin {
+  background-color: #000000;
+  text-align: center;
+  width: 100%;
+  height: 877px;
+  margin: auto;
+}
+
+.fotoInicio {
+  width: 40%;
+  position: absolute;
+  left: 45px;
+  top: 140px;
+  border-radius: 50px;
+}
+
+.v-line {
+  border-left: thick solid #ffffff;
+  height: 82.2%;
+  left: 50%;
+  position: absolute;
+}
+
+.fotoInicio2 {
+  width: 35%;
+  position: absolute;
+  left: 57%;
+  top: 54%;
+}
+
+.fotoInicio3 {
+  width: 744px;
+  height: 400px;
+  object-fit: cover;
+  position: absolute;
+  left: 57%;
+  top: 14%;
+}
+
+.boton-login {
+  cursor: pointer;
+  position: absolute;
+  left: 80%;
+  top: 50px;
+
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.boton-login:active,
+.boton-login:hover {
+  outline: 0;
+}
+.boton-login span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+.boton-login:hover span {
+  background: none;
+}
+@media (min-width: 768px) {
+  .boton-login {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+.boton-register {
+  cursor: pointer;
+  position: absolute;
+  top: 50px;
+  left: 90%;
+
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.boton-register:active,
+.boton-register:hover {
+  outline: 0;
+}
+.boton-register span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+.boton-register:hover span {
+  background: none;
+}
+@media (min-width: 768px) {
+  .boton-register {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+form {
+  --background: white;
+  --border: rgba(0, 0, 0, 0.125);
+  --borderDark: rgba(0, 0, 0, 0.25);
+  --borderDarker: rgba(0, 0, 0, 0.5);
+  --bgColorH: 0;
+  --bgColorS: 0%;
+  --bgColorL: 98%;
+  --fgColorH: 210;
+  --fgColorS: 50%;
+  --fgColorL: 38%;
+  --shadeDark: 0.3;
+  --shadeLight: 0.7;
+  --shadeNormal: 0.5;
+  --borderRadius: 0.125rem;
+  --highlight: #306090;
+  background: rgb(179, 230, 253);
+  border: 1px solid var(--border);
+  border-radius: var(--borderRadius);
+  box-shadow: 0 1rem 1rem -0.75rem var(--border);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
+  width: 30%;
+  margin: auto;
+  position: absolute;
+  top: 250px;
+  left: 60%;
+}
+
+form .email,
+form .email a {
+  color: hsl(var(--fgColorH), var(--fgColorS), var(--fgColorL));
+  font-size: 0.825rem;
+  order: 4;
+  text-align: center;
+  margin-top: 0.25rem;
+  outline: 1px dashed transparent;
+  outline-offset: 2px;
+  display: inline;
+}
+
+form a:hover {
+  color: hsl(var(--fgColorH), var(--fgColorS), calc(var(--fgColorL) * 0.85));
+  transition: color 0.25s;
+}
+
+form a:focus {
+  color: hsl(var(--fgColorH), var(--fgColorS), calc(var(--fgColorL) * 0.85));
+  outline: 1px dashed
+    hsl(
+      var(--fgColorH),
+      calc(var(--fgColorS) * 2),
+      calc(var(--fgColorL) * 1.15)
+    );
+  outline-offset: 2px;
+}
+
+form > div {
+  order: 2;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-show-password {
+  order: 3;
+  margin: auto;
+  cursor: pointer;
+}
+
+label > span {
+  color: var(--borderDarker);
+  display: block;
+  font-size: 0.825rem;
+  margin-top: 0.625rem;
+  order: 1;
+  transition: all 0.25s;
+  text-align: center;
+}
+
+label > span.required::after {
+  content: "*";
+  color: #dd6666;
+  margin-left: 0.125rem;
+}
+
+label input {
+  order: 2;
+  outline: none;
+  margin: auto;
+}
+
+label input::placeholder {
+  color: var(--borderDark);
+  text-align: center;
+}
+
+label input[name="password"] {
+  -webkit-text-security: disc;
+  text-align: center;
+}
+
+input[name="show-password"]:checked ~ div label input[name="password"] {
+  -webkit-text-security: none;
+  margin: auto;
+  cursor: pointer;
+}
+
+label:hover span {
+  color: hsl(var(--fgColorH), var(--fgColorS), var(--fgColorL));
+}
+
+input[type="checkbox"] + div label:hover span::before,
+label:hover input.text {
+  border-color: hsl(var(--fgColorH), var(--fgColorS), var(--fgColorL));
+}
+
+label input.text:focus,
+label input.text:active {
+  border-color: hsl(
+    var(--fgColorH),
+    calc(var(--fgColorS) * 2),
+    calc(var(--fgColorL) * 1.15)
+  );
+  box-shadow: 0 1px
+    hsl(
+      var(--fgColorH),
+      calc(var(--fgColorS) * 2),
+      calc(var(--fgColorL) * 1.15)
+    );
+}
+
+input.text:focus + span,
+input.text:active + span {
+  color: hsl(
+    var(--fgColorH),
+    calc(var(--fgColorS) * 2),
+    calc(var(--fgColorL) * 1.15)
+  );
+}
+
+input {
+  border: 1px solid var(--border);
+  border-radius: var(--borderRadius);
+  box-sizing: border-box;
+  font-size: 1rem;
+  height: 2.25rem;
+  line-height: 1.25rem;
+  margin-top: 0.25rem;
+  order: 2;
+  padding: 0.25rem 0.5rem;
+  width: 15rem;
+  transition: all 0.25s;
+}
+
+.botonLoginLogin {
+  margin: auto;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  color: hsl(var(--bgColorH), var(--bgColorS), var(--bgColorL));
+  background: hsl(var(--fgColorH), var(--fgColorS), var(--fgColorL));
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-top: 0.625rem;
+  order: 4;
+  outline: 1px dashed transparent;
+  outline-offset: 2px;
+  padding-left: 0;
+  text-transform: uppercase;
+}
+
+input[type="checkbox"]:focus + label span::before,
+input[type="submit"]:focus {
+  outline: 1px dashed
+    hsl(
+      var(--fgColorH),
+      calc(var(--fgColorS) * 2),
+      calc(var(--fgColorL) * 1.15)
+    );
+  outline-offset: 2px;
+}
+
+input[type="submit"]:focus {
+  background: hsl(
+    var(--fgColorH),
+    var(--fgColorS),
+    calc(var(--fgColorL) * 0.85)
+  );
+}
+
+input[type="submit"]:hover {
+  background: hsl(
+    var(--fgColorH),
+    var(--fgColorS),
+    calc(var(--fgColorL) * 0.85)
+  );
+}
+
+input[type="submit"]:active {
+  background: hsl(
+    var(--fgColorH),
+    calc(var(--fgColorS) * 2),
+    calc(var(--fgColorL) * 1.15)
+  );
+  transition: all 0.125s;
+}
+.a11y-hidden {
+  position: absolute;
+  top: -1000em;
+  left: -1000em;
+}
+
+input[type="checkbox"] + label span {
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+input[type="checkbox"] + label span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 1px solid var(--borderDark);
+  border-radius: var(--borderRadius);
+  transition: all 0.25s;
+  outline: 1px dashed transparent;
+  outline-offset: 2px;
+}
+
+input[type="checkbox"]:checked + label span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0.1875rem;
+  left: 0.1875rem;
+  width: 0.375rem;
+  height: 0.375rem;
+  border: 1px solid var(--borderDark);
+  border-radius: var(--borderRadius);
+  transition: all 0.25s;
+  outline: 1px dashed transparent;
+  outline-offset: 2px;
+  background: hsl(var(--fgColorH), var(--fgColorS), var(--fgColorL));
+}
+
+/** PERSON */
+figure {
+  --skinH: 30;
+  --skinS: 100%;
+  --skinL: 78%;
+  --hair: rgb(128, 66, 66);
+  background: hsl(var(--fgColorH), calc(var(--fgColorS) * 2), 0%);
+  border: 1px solid rgba(0, 0, 0, 0.0625);
+  border-radius: 50%;
+  height: 0;
+  margin: auto auto;
+  margin-bottom: 2rem;
+  order: 1;
+  padding-top: 60%;
+  position: relative;
+  width: 60%;
+  overflow: hidden;
+}
+
+figure div {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+figure .skin {
+  background: hsl(var(--skinH), var(--skinS), var(--skinL));
+  box-shadow: inset 0 0 3rem
+    hsl(var(--skinH), var(--skinS), calc(var(--skinL) * 0.95));
+}
+
+figure .head {
+  top: 40%;
+  left: 50%;
+  width: 60%;
+  height: 60%;
+  border-radius: 100%;
+  box-shadow: 0 -0.175rem 0 0.125rem var(--hair);
+}
+
+figure .ears {
+  top: 47%;
+  left: 50%;
+  white-space: nowrap;
+}
+
+figure .ears::before,
+figure .ears::after {
+  content: "";
+  background: hsl(var(--skinH), var(--skinS), var(--skinL));
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  margin: 0 2.1rem;
+}
+
+figure .head .eyes {
+  top: 55%;
+  left: 50%;
+  white-space: nowrap;
+}
+
+@-webkit-keyframes blink {
+  0%,
+  90%,
+  100% {
+    height: 10px;
+  }
+  95% {
+    height: 0;
+  }
+}
+
+@keyframes blink {
+  0%,
+  90%,
+  100% {
+    height: 10px;
+  }
+  95% {
+    height: 0px;
+  }
+}
+
+figure .head .eyes::before,
+figure .head .eyes::after {
+  content: "";
+  background: var(--borderDarker);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin: 0 0.5rem;
+  -webkit-animation: blink 5s infinite;
+  animation: blink 5s infinite;
+  transition: all 0.15s;
+}
+
+input[name="show-password"]:checked ~ figure .head .eyes::before,
+input[name="show-password"]:checked ~ figure .head .eyes::after {
+  height: 0.125rem;
+  animation: none;
+  cursor: pointer;
+}
+
+figure .head .mouth {
+  border: 0.125rem solid transparent;
+  border-bottom: 0.125rem solid var(--borderDarker);
+  width: 25%;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+form:invalid figure .head .mouth {
+  top: 75%;
+  left: 50%;
+  height: 10%;
+}
+
+form:valid figure .head .mouth {
+  top: 60%;
+  left: 50%;
+  width: 40%;
+  height: 40%;
+}
+
+figure .hair {
+  top: 40%;
+  left: 50%;
+  width: 66.66%;
+  height: 66.66%;
+  border-radius: 80%;
+  overflow: hidden;
+}
+
+figure .hair::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--hair);
+  border-radius: 50%;
+  top: -60%;
+  left: -50%;
+  box-shadow: 4rem 0 var(--hair);
+}
+
+figure .neck {
+  width: 10%;
+  height: 40%;
+  top: 62%;
+  left: 50%;
+  background: hsl(var(--skinH), var(--skinS), calc(var(--skinL) * 0.94));
+  border-radius: 0 0 2rem 2rem;
+  box-shadow: 0 0.25rem var(--border);
+}
+
+figure .person-body {
+  width: 60%;
+  height: 100%;
+  border-radius: 50%;
+  background: red;
+  left: 50%;
+  top: 126%;
+  background: hsl(var(--fgColorH), var(--fgColorS), var(--fgColorL));
+}
+
+figure .shirt-1,
+figure .shirt-2 {
+  width: 12%;
+  height: 7%;
+  background: hsl(var(--bgColorH), var(--bgColorS), var(--bgColorL));
+  top: 76%;
+  left: 36.5%;
+  transform: skew(-10deg) rotate(15deg);
+}
+
+figure .shirt-2 {
+  left: 52.5%;
+  transform: skew(10deg) rotate(-15deg);
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+.form {
+  background-color: #15172b;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 450px;
+  padding: 20px;
+  width: 520px;
+  margin: auto;
+  position: absolute;
+  top: 300px;
+  left: 65%;
+}
+
+.title {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.subtitle {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.ic1 {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.ic2 {
+  margin-top: 30px;
+}
+
+.input {
+  background-color: #303245;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.cut {
+  background-color: #15172b;
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 76px;
+}
+
+.cut-short {
+  width: 50px;
+}
+
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+  transform: translateY(8px);
+  text-align: center;
+}
+
+.placeholder {
+  color: #65657b;
+  font-family: sans-serif;
+  left: 20px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+  text-align: center;
+}
+
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+  transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown) ~ .placeholder {
+  color: #808097;
+  text-align: center;
+}
+
+.input:focus ~ .placeholder {
+  color: #dc2f55;
+  text-align: center;
+}
+
+.submit {
+  background-color: #08d;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+  outline: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.submit:active {
+  background-color: #06b;
+}
+
+.footerLogin {
+  /* background-color: #00DDEB; */
+  color: rgb(0, 0, 0);
+  /* width: 100%; */
+  height: 55px;
+  font-size: 40px;
+  /* background-color: #000; */
+  /* background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB); */
+}
+
+.iconosfoterlogin {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-around;
+  gap: 8%;
+}
+
+
+
+
+
+
+:root {
+  /** sunny side **/
+  --blue-background: #C2E9F6;
+  --blue-border: #72cce3;
+  --blue-color: #96dcee;
+  --yellow-background: #fffaa8;
+  --yellow-border: #f5eb71;
+  /** dark side **/
+  --indigo-background: #569cca;
+  --indigo-border: #5d6baa;
+  --indigo-color: #6b7abb;
+  --gray-border: #e8e8ea;
+  --gray-dots: #e8e8ea;
+  /** general **/
+  --white: #fff;
+}
+
+
+.backgroundlo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: var(black);
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  transition: all 250ms ease-in;
+}
+
+.toggle--checkbox {
+  display: none;
+  /* cursor: pointer; */
+}
+
+.toggle--checkbox:checked ~ .backgroundlo {
+  background: var(--indigo-background);
+}
+.toggle--checkbox:checked + .toggle--labelLogin {
+  background: var(--indigo-color);
+}
+.toggle--checkbox:checked + .toggle--labelLogin .toggle--label-background {
+  left: 60px;
+  width: 5px;
+}
+.toggle--checkbox:checked + .toggle--labelLogin .toggle--label-background:before {
+  width: 5px;
+  height: 5px;
+  top: -25px;
+}
+.toggle--checkbox:checked + .toggle--labelLogin .toggle--label-background:after {
+  width: 5px;
+  height: 5px;
+  left: -30px;
+  top: 20px;
+}
+.toggle--checkbox:checked + .toggle--labelLogin:before {
+  background: var(--white);
+  border-color: var(--gray-border);
+  animation-name: switch;
+  animation-duration: 350ms;
+  animation-fill-mode: forwards;
+}
+.toggle--checkbox:checked + .toggle--labelLogin:after {
+  transition-delay: 350ms;
+  opacity: 1;
+}
+.toggle--labelLogin {
+  width: 200px;
+  height: 100px;
+  background: var(--blue-color);
+  border-radius: 100px;
+  border: 5px solid var(--blue-border);
+  display: flex;
+  position: relative;
+  transition: all 350ms ease-in;
+  cursor: pointer;
+  top: -1065px;
+  left: 1%;
+}
+.toggle--label-background {
+  width: 10px;
+  height: 5px;
+  border-radius: 5px;
+  position: relative;
+  background: var(--white);
+  left: 135px;
+  top: 45px;
+  transition: all 150ms ease-in;
+}
+.toggle--label-background:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  width: 40px;
+  height: 5px;
+  border-radius: 5px;
+  background: var(--white);
+  left: -20px;
+  transition: all 150ms ease-in;
+}
+.toggle--label-background:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  width: 40px;
+  height: 5px;
+  border-radius: 5px;
+  background: var(--white);
+  left: -10px;
+  transition: all 150ms ease-in;
+}
+.toggle--labelLogin:before {
+  animation-name: reverse;
+  animation-duration: 350ms;
+  animation-fill-mode: forwards;
+  transition: all 350ms ease-in;
+  content: "";
+  width: 82px;
+  height: 82px;
+  border: 5px solid var(--yellow-border);
+  top: 4px;
+  left: 4px;
+  position: absolute;
+  border-radius: 82px;
+  background: var(--yellow-background);
+}
+.toggle--labelLogin:after {
+  transition-delay: 0ms;
+  transition: all 250ms ease-in;
+  position: absolute;
+  content: "";
+  box-shadow: var(--gray-dots) -13px 0 0 2px, var(--gray-dots) -24px 14px 0 -2px;
+  left: 143px;
+  top: 23px;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+
+
+@keyframes switch {
+  0% {
+    left: 4px;
+  }
+  60% {
+    left: 4px;
+    width: 112px;
+  }
+  100% {
+    left: 104px;
+    width: 82px;
+  }
+}
+@keyframes reverse {
+  0% {
+    left: 104px;
+    width: 82px;
+  }
+  60% {
+    left: 72px;
+    width: 112px;
+  }
+  100% {
+    left: 4px;
+  }
+}

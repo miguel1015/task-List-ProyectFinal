@@ -1,0 +1,26 @@
+###
+POST http://localhost:9000/api/taskList HTTP/1.1
+Content-Type: application/json
+{
+    "task": "ir a correr",
+    "description": "correr en las mañanas y tardes",
+}
+
+###
+GET http://localhost:9000/api/taskList HTTP/1.1
+
+###
+GET http://localhost:9000/api/taskList/ HTTP/1.1
+
+###
+PUT http://localhost:9000/api/taskList/63e3a7426912032688c0cad1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "task": "elton jhon",
+    "description": "75",
+    "state": ""
+}
+
+###
+DELETE  http://localhost:9000/api/taskList/63e3a7426912032688c0cad1 HTTP/1.1
